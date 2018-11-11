@@ -10,7 +10,7 @@ public class RightTurnerTest {
 
 	@Test
 	public void test() {
-		RightTurner robot = new RightTurner(1, 1, Directions.East);
+		AdvancedRobot robot = new AdvancedRobot(1, 1, Directions.East);
 		robot.turnRight();
 		assertEquals(true, robot.facingSouth());
 	}

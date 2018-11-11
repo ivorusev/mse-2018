@@ -18,7 +18,7 @@ public class RobotsCoordinatesTest {
 
 	@Test
 	public void testCoordinatesMoveStreetInc() {
-		RightTurner rightTurner = new RightTurner(2, 2, Directions.East);
+		AdvancedRobot rightTurner = new AdvancedRobot(2, 2, Directions.East);
 		rightTurner.move();
 		assertEquals(3, rightTurner.getStreet());
 		assertEquals(2, rightTurner.getAvenue());
@@ -26,7 +26,7 @@ public class RobotsCoordinatesTest {
 	
 	@Test
 	public void testCoordinatesMoveStreetDec() {
-		RightTurner rightTurner = new RightTurner(2, 2, Directions.West);
+		AdvancedRobot rightTurner = new AdvancedRobot(2, 2, Directions.West);
 		rightTurner.move();
 		assertEquals(1, rightTurner.getStreet());
 		assertEquals(2, rightTurner.getAvenue());
@@ -34,7 +34,7 @@ public class RobotsCoordinatesTest {
 	
 	@Test
 	public void testCoordinatesMoveAvenueInc() {
-		RightTurner rightTurner = new RightTurner(2, 2, Directions.North);
+		AdvancedRobot rightTurner = new AdvancedRobot(2, 2, Directions.North);
 		rightTurner.move();
 		assertEquals(2, rightTurner.getStreet());
 		assertEquals(3, rightTurner.getAvenue());
@@ -42,7 +42,7 @@ public class RobotsCoordinatesTest {
 	
 	@Test
 	public void testCoordinatesMoveStreet() {
-		RightTurner rightTurner = new RightTurner(2, 2, Directions.South);
+		AdvancedRobot rightTurner = new AdvancedRobot(2, 2, Directions.South);
 		rightTurner.move();
 		assertEquals(2, rightTurner.getStreet());
 		assertEquals(1, rightTurner.getAvenue());
